@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sign up Page</title>
+   
+</head>
+<body style="background-color: lightgray;">
+    <style>
+        #register-form{
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        
+    </style>
+    <h1 style="text-align: center;">Sigh up</h1>
+   
+    <form id="register-form" method="post">
+        <label for="fname">Name:</label><br>
+        <input type="text" name="fname" id="fname" placeholder="full name" autofocus required><br><br>
+        <label for="email">email:</label><br>
+        <input type="email" name="email"  id="email" placeholder="gmail id" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="8 characters" required><br><br>
+        <label for="password">Confirm Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="8 characters" required><br><br>
+        <label for="date">Date Of Birth:</label><br>
+        <input type="date" name="date" id="date"
+        placeholder="dd/mm/yy" required><br><br>
+        <label for="gender">Gender:</label><br>
+        
+        <label for="male">Male:</label>
+        <input type="radio" name="male" id="male">
+        <label for="female">Female:</label>
+        <input type="radio" name="female" id="female">
+        <label for="other">Other:</label>
+        <input type="radio" name="other" id="other"><br><br>
+
+        <label for="file">Insert your photo:</label><br>
+        <input type="file" name="file" id="file"placeholder="No file chosen"><br><br>
+
+        <label for="file">Insert your resume:</label><br>
+        <input type="file" name="file" id="file"placeholder="No file chosen"><br><br>
+
+         <label>Security Question:</label><br>
+        <select name="security-questation" >
+            <!-- can use multiple attribute, it allows you to select multiple options --> 
+            <option value="">Select</option>
+            <option value="">What is your first pet name?</option>
+            <option value="">What is your Primary name?</option>
+            <option value="">What is your favourite color?</option>
+        </select><br>
+        <textarea name="answer" id="" cols="28" rows="6"></textarea>
+        <br><br>
+        <input type="checkbox" name="" id="">
+        <label for="">I agree terms and conditions</label><br>
+        
+
+        <button>Register</button>
+
+
+    </form>
+</body>
+</html>
